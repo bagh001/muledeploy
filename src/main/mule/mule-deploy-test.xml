@@ -11,7 +11,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<configuration-properties doc:name="Configuration properties" doc:id="a8604048-34d8-4063-8a82-eb315f1cd6a4" file="config.properties" />
 	<flow name="mule-deploy-testFlow" doc:id="80180410-569b-4f36-8808-25f6ec1bf133" >
 		<http:listener doc:name="Listener" doc:id="f9bd4bba-c1b3-4bb6-9a2e-7ea192a020c4" config-ref="HTTP_Listener_config" path="/mavendeploy"/>
-		<logger level="INFO" doc:name="Logger" doc:id="363b02cd-77ca-4e46-bee0-4f210bf64a6a" message="#['http request recieved ']"/>
+		<logger level="INFO" doc:name="Logger" doc:id="363b02cd-77ca-4e46-bee0-4f210bf64a6a" message="#['http request recieved    ']"/>
 		<ee:transform doc:name="Transform Message" doc:id="22e8f01c-300d-4615-90c1-8909d84a4e7d" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
